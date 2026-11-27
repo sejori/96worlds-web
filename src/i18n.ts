@@ -1,5 +1,5 @@
 /**
- * Zero-dependency i18n for 96worlds.
+ * Zero-dependency i18n for 96worlds.gg.
  *
  * Markup hooks:
  *   data-i18n="key"                 -> sets textContent
@@ -17,10 +17,10 @@ const STORAGE_KEY = '96worlds_lang';
 type Dict = Record<string, string>;
 
 const en: Dict = {
-  'meta.title.home': '96worlds — Create a world. Write the rules. Bring your friends!',
-  'meta.title.studio': 'Web Studio (under construction) — 96worlds',
+  'meta.title.home': '96worlds.gg — Create a world. Write the rules. Bring your friends!',
+  'meta.title.studio': 'Web Studio (under construction) — 96worlds.gg',
   'meta.description':
-    'The 96worlds client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!',
+    'The 96worlds.gg client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!',
 
   'nav.skip': 'Skip to content',
   'nav.label': 'Primary',
@@ -34,7 +34,7 @@ const en: Dict = {
   'common.soon': 'Coming soon',
   'theme.toDark': 'Switch to dark theme',
   'theme.toLight': 'Switch to light theme',
-  'brand.home': '96worlds home',
+  'brand.home': '96worlds.gg home',
 
   'hero.eyebrow': 'AI-native multiplayer game creation',
   'hero.line1': 'Create a world.',
@@ -110,7 +110,7 @@ const en: Dict = {
   'download.note': 'Got a room code from a friend? Open the launcher and type it in.',
 
   'community.title': 'Join the community',
-  'community.body': 'Share your games, find players and help shape 96worlds.',
+  'community.body': 'Share your games, find players and help shape 96worlds.gg.',
 
   'footer.tagline': 'Create a world. Write the rules. Bring your friends!',
   'footer.credit': 'Built with Godot Engine and open source.',
@@ -131,10 +131,10 @@ const en: Dict = {
 };
 
 const ptBR: Dict = {
-  'meta.title.home': '96worlds — Crie um mundo. Escreva as regras. Traga seus amigos!',
-  'meta.title.studio': 'Estúdio Web (em construção) — 96worlds',
+  'meta.title.home': '96worlds.gg — Crie um mundo. Escreva as regras. Traga seus amigos!',
+  'meta.title.studio': 'Estúdio Web (em construção) — 96worlds.gg',
   'meta.description':
-    'O cliente 96worlds é o seu lugar para criar, compartilhar e jogar mundos multiplayer vivos. Crie um mundo. Escreva as regras. Traga seus amigos!',
+    'O cliente 96worlds.gg é o seu lugar para criar, compartilhar e jogar mundos multiplayer vivos. Crie um mundo. Escreva as regras. Traga seus amigos!',
 
   'nav.skip': 'Pular para o conteúdo',
   'nav.label': 'Principal',
@@ -148,7 +148,7 @@ const ptBR: Dict = {
   'common.soon': 'Em breve',
   'theme.toDark': 'Mudar para o tema escuro',
   'theme.toLight': 'Mudar para o tema claro',
-  'brand.home': 'Página inicial do 96worlds',
+  'brand.home': 'Página inicial do 96worlds.gg',
 
   'hero.eyebrow': 'Criação de jogos multiplayer com IA',
   'hero.line1': 'Crie um mundo.',
@@ -224,7 +224,7 @@ const ptBR: Dict = {
   'download.note': 'Recebeu um código de sala de um amigo? Abra o launcher e digite o código.',
 
   'community.title': 'Entre na comunidade',
-  'community.body': 'Compartilhe seus jogos, encontre jogadores e ajude a moldar o 96worlds.',
+  'community.body': 'Compartilhe seus jogos, encontre jogadores e ajude a moldar o 96worlds.gg.',
 
   'footer.tagline': 'Crie um mundo. Escreva as regras. Traga seus amigos!',
   'footer.credit': 'Feito com Godot Engine e código aberto.',
@@ -245,10 +245,10 @@ const ptBR: Dict = {
 };
 
 const ja: Dict = {
-  'meta.title.home': '96worlds — 世界を創る。ルールを書く。仲間を呼ぼう！',
-  'meta.title.studio': 'Webスタジオ（工事中）— 96worlds',
+  'meta.title.home': '96worlds.gg — 世界を創る。ルールを書く。仲間を呼ぼう！',
+  'meta.title.studio': 'Webスタジオ（工事中）— 96worlds.gg',
   'meta.description':
-    '96worldsクライアントは、マルチプレイヤーゲームを創り、共有し、参加できるプラットフォームです。世界を創る。ルールを書く。仲間を呼ぼう！',
+    '96worlds.ggクライアントは、マルチプレイヤーゲームを創り、共有し、参加できるプラットフォームです。世界を創る。ルールを書く。仲間を呼ぼう！',
 
   'nav.skip': '本文へスキップ',
   'nav.label': 'メインメニュー',
@@ -262,7 +262,7 @@ const ja: Dict = {
   'common.soon': '近日公開',
   'theme.toDark': 'ダークテーマに切り替え',
   'theme.toLight': 'ライトテーマに切り替え',
-  'brand.home': '96worlds ホーム',
+  'brand.home': '96worlds.gg ホーム',
 
   'hero.eyebrow': 'AIネイティブなマルチプレイヤーゲーム制作',
   'hero.line1': '世界を創る。',
@@ -337,7 +337,7 @@ const ja: Dict = {
   'download.note': '友達からルームコードをもらった？ランチャーを開いてコードを入力するだけ。',
 
   'community.title': 'コミュニティに参加',
-  'community.body': 'ゲームを共有して、仲間を見つけて、96worldsを一緒に作ろう。',
+  'community.body': 'ゲームを共有して、仲間を見つけて、96worlds.ggを一緒に作ろう。',
 
   'footer.tagline': '世界を創る。ルールを書く。仲間を呼ぼう！',
   'footer.credit': 'Godot Engineとオープンソースで構築。',

@@ -1,14 +1,14 @@
-# 96worlds Web Studio — Architecture & Handover Specification
+# 96worlds.gg Web Studio — Architecture & Handover Specification
 
 **Status:** Parked / Under Construction  
 **Audience:** Frontend Engineers, Game Tech Leads, Product Designers  
-**Associated UI:** `/studio.html` on `96worlds`
+**Associated UI:** `/studio.html` on `96worlds.gg`
 
 ---
 
 ## 1. Executive Summary & Vision
 
-The **96worlds Web Studio** is a browser-based companion portal designed to give players and creators a visual window into their games without requiring the native desktop client to be open. 
+The **96worlds.gg Web Studio** is a browser-based companion portal designed to give players and creators a visual window into their games without requiring the native desktop client to be open. 
 
 While full gameplay execution is offloaded to the native Godot launcher (`96WorldsLauncher`), the Web Studio fulfills three critical use cases:
 1. **Game Gallery & Build Snapshots**: View high-resolution gameplay screenshots, automated test run videos, and level generation captures from every build.
@@ -23,10 +23,10 @@ While full gameplay execution is offloaded to the native Godot launcher (`96Worl
 1. A creator issues a prompt via Discord, CLI, or the upcoming prompt interface.
 2. The headless pipeline on `playable-server` compiles the `.pck` and invokes a headless Godot instance (`--write-movie` or screenshot capture).
 3. Artifacts (`capture.png`, `boss_model.glb`, `manifest.json`) are uploaded to Cloud Storage (`/realms/<room_code>/artifacts/`).
-4. The creator visits `96worlds/studio.html?realm=TEST-4821` to inspect the results before inviting friends.
+4. The creator visits `96worlds.gg/studio.html?realm=TEST-4821` to inspect the results before inviting friends.
 
 ### 2.2 The Player / Friend Flow
-1. A player receives a link: `https://96worlds/studio.html?realm=TEST-4821`.
+1. A player receives a link: `https://96worlds.gg/studio.html?realm=TEST-4821`.
 2. The page displays the realm title (*"The Boiling Iron Rig"*), screenshots, boss stats, and active players.
 3. A single CTA button: **"Join Game"** triggers `96worlds://join/TEST-4821` (or falls back to downloading the launcher if not installed).
 

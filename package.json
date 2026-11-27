@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "96worlds — AI-Native Game Studio & Multi-Platform Launcher Portal",
+  "description": "96worlds.gg — AI-Native Game Studio & Multi-Platform Launcher Portal",
   "scripts": {
     "dev": "vite --port 5173",
     "build": "tsc --noEmit && vite build",

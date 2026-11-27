@@ -1,9 +1,10 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('96worlds Web Suite', () => {
-  test('Landing page loads with 96worlds branding and hero copy', async ({ page }) => {
+test.describe('96worlds.gg Web Suite', () => {
+  test('Landing page loads with 96worlds.gg branding and hero copy', async ({ page }) => {
     await page.goto('./');
-    await expect(page).toHaveTitle(/96worlds — Create a world. Write the rules. Bring your friends!/i);
+    await expect(page).toHaveTitle(/96worlds\.gg — Create a world. Write the rules. Bring your friends!/i);
+    await expect(page.locator('.site-header .wordmark')).toHaveText('96worlds.gg');
 
     // Hero headline lines
     const heroTitle = page.locator('.hero-title');
@@ -206,14 +207,14 @@ test.describe('96worlds Web Suite', () => {
     // Switch to Japanese
     await langSelect.selectOption('ja');
     await expect(page.locator('html')).toHaveAttribute('lang', 'ja');
-    await expect(page).toHaveTitle(/96worlds — 世界を創る。ルールを書く。仲間を呼ぼう！/i);
+    await expect(page).toHaveTitle(/96worlds\.gg — 世界を創る。ルールを書く。仲間を呼ぼう！/i);
     await expect(page.locator('.hero-title')).toContainText('世界を創る。');
     await expect(page.locator('#cta-get-started')).toHaveText('今すぐ始める');
 
     // Switch to Brazilian Portuguese
     await langSelect.selectOption('pt-BR');
     await expect(page.locator('html')).toHaveAttribute('lang', 'pt-BR');
-    await expect(page).toHaveTitle(/96worlds — Crie um mundo. Escreva as regras. Traga seus amigos!/i);
+    await expect(page).toHaveTitle(/96worlds\.gg — Crie um mundo. Escreva as regras. Traga seus amigos!/i);
     await expect(page.locator('.hero-title')).toContainText('Crie um mundo.');
     await expect(page.locator('#cta-get-started')).toHaveText('Comece agora');
 
@@ -252,7 +253,7 @@ test.describe('96worlds Web Suite', () => {
 
     // Navigate to studio page
     await page.goto('./studio.html');
-    await expect(page).toHaveTitle(/Web Studio \(under construction\) — 96worlds/i);
+    await expect(page).toHaveTitle(/Web Studio \(under construction\) — 96worlds\.gg/i);
     await expect(page.getByRole('heading', { name: /Under construction/i })).toBeVisible();
 
     // Japanese "工事中" hanko seal on the studio page

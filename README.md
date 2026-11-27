@@ -1,6 +1,6 @@
 # 96worlds-web
 
-Marketing site for **96worlds** — *Create a world. Write the rules. Bring your friends!* — plus a placeholder for the upcoming Web Studio. Deployed to GitHub Pages at <https://sejori.github.io/96worlds-web/>.
+Marketing site for **96worlds.gg** — *Create a world. Write the rules. Bring your friends!* — plus a placeholder for the upcoming Web Studio. Deployed to GitHub Pages at <https://sejori.github.io/96worlds-web/>.
 
 ## What's here
 
@@ -10,7 +10,7 @@ Marketing site for **96worlds** — *Create a world. Write the rules. Bring your
 - **Theming**: light/dark following the system setting, with a stored override (`96worlds_theme`).
 - **Auth client** (`src/auth.ts`): Google Identity Services plus a guest creator mode; the session JWT is stored in `localStorage` under `playable_session_jwt` (legacy key name, kept for compatibility).
 
-Brand: brush-stroke display type (Knewave) and a 世界 *sekai* ("world") hanko seal on a white · blue · red palette. The wordmark is **96** (red) + **worlds** (ink).
+Brand: brush-stroke display type (Knewave) and a 世界 *sekai* ("world") hanko seal on a white · blue · red palette. The wordmark is **96** (red) + **worlds** (ink) + **.gg** (blue).
 
 ## Develop
 

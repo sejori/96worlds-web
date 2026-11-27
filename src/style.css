@@ -1,5 +1,5 @@
 /* ==========================================================================
-   96worlds — brand stylesheet
+   96worlds.gg — brand stylesheet
    Brush-stroke display type (street-fighter / Japanese ink) on a clean,
    Material-style surface system. White · blue · red. Light + dark schemes.
    ========================================================================== */
@@ -214,10 +214,13 @@ code {
   font-size: 1.65rem;
   line-height: 1;
   letter-spacing: 0.01em;
+  color: var(--text);
+}
+.wordmark-num {
   color: var(--red); /* "96" */
 }
 .wordmark-tld {
-  color: var(--text); /* "worlds" */
+  color: var(--blue); /* ".gg" */
 }
 
 /* Hanko (印) seal — 世界 "sekai", world */

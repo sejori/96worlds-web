@@ -83,8 +83,11 @@ async function generateAssets() {
         color: #14161c;
         letter-spacing: 0.5px;
       }
-      .brand-tld {
+      .brand-num {
         color: #d7261e;
+      }
+      .brand-tld {
+        color: #1f4fd8;
       }
       .tag-pill {
         margin-left: 20px;
@@ -166,7 +169,7 @@ async function generateAssets() {
 
     <div class="header">
       <div class="hanko-header">世界</div>
-      <div class="brand-title"><span class="brand-tld">96</span>worlds</div>
+      <div class="brand-title"><span class="brand-num">96</span>worlds<span class="brand-tld">.gg</span></div>
       <div class="tag-pill">AI-Native Game Engine</div>
     </div>
 
@@ -177,7 +180,7 @@ async function generateAssets() {
         <span class="hl-blue">Bring your friends!</span>
       </div>
       <p class="lead">
-        The 96worlds client is your home to create, share, and join living multiplayer games with your friends.
+        The 96worlds.gg client is your home to create, share, and join living multiplayer games with your friends.
       </p>
     </div>
 
@@ -187,7 +190,7 @@ async function generateAssets() {
         <span class="badge">⚡ Custom Generative Systems</span>
         <span class="badge">🌐 Scale-to-Zero Multiplayer</span>
       </div>
-      <div style="font-size: 18px; font-weight: 800; color: #d7261e; letter-spacing: 0.5px;">96worlds</div>
+      <div style="font-size: 18px; font-weight: 800; color: #1f4fd8; letter-spacing: 0.5px;">96worlds.gg</div>
     </div>
   </body>
   </html>
