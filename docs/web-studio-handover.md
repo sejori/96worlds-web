@@ -1,19 +1,19 @@
-# tokigen Web Studio — Architecture & Handover Specification
+# 96worlds Web Studio — Architecture & Handover Specification
 
 **Status:** Parked / Under Construction  
 **Audience:** Frontend Engineers, Game Tech Leads, Product Designers  
-**Associated UI:** `/studio.html` on `tokigen.gg`
+**Associated UI:** `/studio.html` on `96worlds`
 
 ---
 
 ## 1. Executive Summary & Vision
 
-The **tokigen Web Studio** is a browser-based companion portal designed to give players and creators a visual window into their games without requiring the native desktop client to be open. 
+The **96worlds Web Studio** is a browser-based companion portal designed to give players and creators a visual window into their games without requiring the native desktop client to be open. 
 
-While full gameplay execution is offloaded to the native Godot launcher (`TokigenLauncher`), the Web Studio fulfills three critical use cases:
+While full gameplay execution is offloaded to the native Godot launcher (`96WorldsLauncher`), the Web Studio fulfills three critical use cases:
 1. **Game Gallery & Build Snapshots**: View high-resolution gameplay screenshots, automated test run videos, and level generation captures from every build.
 2. **Interactive 3D Asset Inspector**: Rotate, inspect, and preview procedural 3D models (glTF/GLB/TRES converted assets, weapon props, boss models, terrain chunks) directly in WebGL/WebGPU.
-3. **Sharable Realm Cards & Social Previews**: Generate shareable URLs for individual realms with dynamic room codes, status indicators (Active / Scale-to-Zero Sleeping), and instant launcher deep-links (`tokigen://join/<room_code>`).
+3. **Sharable Realm Cards & Social Previews**: Generate shareable URLs for individual realms with dynamic room codes, status indicators (Active / Scale-to-Zero Sleeping), and instant launcher deep-links (`96worlds://join/<room_code>`).
 
 ---
 
@@ -23,12 +23,12 @@ While full gameplay execution is offloaded to the native Godot launcher (`Tokige
 1. A creator issues a prompt via Discord, CLI, or the upcoming prompt interface.
 2. The headless pipeline on `playable-server` compiles the `.pck` and invokes a headless Godot instance (`--write-movie` or screenshot capture).
 3. Artifacts (`capture.png`, `boss_model.glb`, `manifest.json`) are uploaded to Cloud Storage (`/realms/<room_code>/artifacts/`).
-4. The creator visits `tokigen.gg/studio.html?realm=TEST-4821` to inspect the results before inviting friends.
+4. The creator visits `96worlds/studio.html?realm=TEST-4821` to inspect the results before inviting friends.
 
 ### 2.2 The Player / Friend Flow
-1. A player receives a link: `https://tokigen.gg/studio.html?realm=TEST-4821`.
+1. A player receives a link: `https://96worlds/studio.html?realm=TEST-4821`.
 2. The page displays the realm title (*"The Boiling Iron Rig"*), screenshots, boss stats, and active players.
-3. A single CTA button: **"Join Game"** triggers `tokigen://join/TEST-4821` (or falls back to downloading the launcher if not installed).
+3. A single CTA button: **"Join Game"** triggers `96worlds://join/TEST-4821` (or falls back to downloading the launcher if not installed).
 
 ---
 
@@ -67,7 +67,7 @@ flowchart LR
 ### Phase 1: Read-Only Gallery & Room Deep-Linker
 - Consume `GET /api/rooms` and display active/recent realms.
 - Display screenshot grid and video player for the selected room.
-- Include OS download buttons and deep-link launcher protocol `tokigen://join/<room_code>`.
+- Include OS download buttons and deep-link launcher protocol `96worlds://join/<room_code>`.
 
 ### Phase 2: Interactive 3D Model Inspector
 - Integrate `<model-viewer>` into `studio.html`.

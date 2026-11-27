@@ -1,5 +1,5 @@
 /**
- * Zero-dependency i18n for tokigen.gg.
+ * Zero-dependency i18n for 96worlds.
  *
  * Markup hooks:
  *   data-i18n="key"                 -> sets textContent
@@ -12,15 +12,15 @@
 export const LANGS = ['en', 'pt-BR', 'ja'] as const;
 export type Lang = (typeof LANGS)[number];
 
-const STORAGE_KEY = 'tokigen_lang';
+const STORAGE_KEY = '96worlds_lang';
 
 type Dict = Record<string, string>;
 
 const en: Dict = {
-  'meta.title.home': 'tokigen.gg — Create a world. Write the rules. Bring your friends!',
-  'meta.title.studio': 'Web Studio (under construction) — tokigen.gg',
+  'meta.title.home': '96worlds — Create a world. Write the rules. Bring your friends!',
+  'meta.title.studio': 'Web Studio (under construction) — 96worlds',
   'meta.description':
-    'The tokigen client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!',
+    'The 96worlds client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!',
 
   'nav.skip': 'Skip to content',
   'nav.label': 'Primary',
@@ -34,17 +34,17 @@ const en: Dict = {
   'common.soon': 'Coming soon',
   'theme.toDark': 'Switch to dark theme',
   'theme.toLight': 'Switch to light theme',
-  'brand.home': 'tokigen.gg home',
+  'brand.home': '96worlds home',
 
   'hero.eyebrow': 'AI-native multiplayer game creation',
   'hero.line1': 'Create a world.',
   'hero.line2': 'Write the rules.',
   'hero.line3': 'Bring your friends!',
   'hero.lead':
-    'The tokigen client is your home to create custom games, share room codes, and jump into living multiplayer worlds with your friends.',
+    'The 96worlds client is your home to create custom games, share room codes, and jump into living multiplayer worlds with your friends.',
   'hero.cta': 'Get Started Now',
   'hero.secondary': 'Watch showcase',
-  'hero.stampLabel': 'Kigen — origin',
+  'hero.stampLabel': 'Sekai — world',
 
   'how.eyebrow': 'How it works',
   'how.title': 'From idea to game night',
@@ -52,7 +52,7 @@ const en: Dict = {
     'An open-source client, our own generative systems and multiplayer servers — three pillars working together.',
   'how.client.title': 'Open-source client',
   'how.client.body':
-    'The tokigen client is built on Godot Engine 4 and open-source tech like Jolt Physics, Terrain3D, and LimboAI (MIT). Use it to create games with AI, share room codes, and join your friends.',
+    'The 96worlds client is built on Godot Engine 4 and open-source tech like Jolt Physics, Terrain3D, and LimboAI (MIT). Use it to create games with AI, share room codes, and join your friends.',
   'how.gen.title': 'Custom generative systems',
   'how.gen.body':
     'Describe it in your own words. Our generative pipeline designs the game, builds the world procedurally, play-tests it with AI bots and packages it for the launcher.',
@@ -93,14 +93,14 @@ const en: Dict = {
   'showcase.step3': 'Bot-tested',
   'showcase.step4': 'Ready to play',
   'showcase.resultLabel': 'Result: Sunken Coral Temple',
-  'showcase.videoLabel': 'Gameplay recorded in the tokigen launcher',
+  'showcase.videoLabel': 'Gameplay recorded in the 96worlds launcher',
   'showcase.copyPrompt': 'Copy Prompt',
   'showcase.copied': 'Copied!',
   'showcase.prev': 'Previous template',
   'showcase.next': 'Next template',
 
   'download.eyebrow': 'Download',
-  'download.title': 'Get the tokigen launcher',
+  'download.title': 'Get the 96worlds launcher',
   'download.sub': 'Free. Install once to create games, share room codes, and join your friends.',
   'download.recommended': 'Recommended',
   'download.button': 'Download',
@@ -110,7 +110,7 @@ const en: Dict = {
   'download.note': 'Got a room code from a friend? Open the launcher and type it in.',
 
   'community.title': 'Join the community',
-  'community.body': 'Share your games, find players and help shape tokigen.',
+  'community.body': 'Share your games, find players and help shape 96worlds.',
 
   'footer.tagline': 'Create a world. Write the rules. Bring your friends!',
   'footer.credit': 'Built with Godot Engine and open source.',
@@ -131,10 +131,10 @@ const en: Dict = {
 };
 
 const ptBR: Dict = {
-  'meta.title.home': 'tokigen.gg — Crie um mundo. Escreva as regras. Traga seus amigos!',
-  'meta.title.studio': 'Estúdio Web (em construção) — tokigen.gg',
+  'meta.title.home': '96worlds — Crie um mundo. Escreva as regras. Traga seus amigos!',
+  'meta.title.studio': 'Estúdio Web (em construção) — 96worlds',
   'meta.description':
-    'O cliente tokigen é o seu lugar para criar, compartilhar e jogar mundos multiplayer vivos. Crie um mundo. Escreva as regras. Traga seus amigos!',
+    'O cliente 96worlds é o seu lugar para criar, compartilhar e jogar mundos multiplayer vivos. Crie um mundo. Escreva as regras. Traga seus amigos!',
 
   'nav.skip': 'Pular para o conteúdo',
   'nav.label': 'Principal',
@@ -148,17 +148,17 @@ const ptBR: Dict = {
   'common.soon': 'Em breve',
   'theme.toDark': 'Mudar para o tema escuro',
   'theme.toLight': 'Mudar para o tema claro',
-  'brand.home': 'Página inicial do tokigen.gg',
+  'brand.home': 'Página inicial do 96worlds',
 
   'hero.eyebrow': 'Criação de jogos multiplayer com IA',
   'hero.line1': 'Crie um mundo.',
   'hero.line2': 'Escreva as regras.',
   'hero.line3': 'Traga seus amigos!',
   'hero.lead':
-    'O cliente tokigen é o seu lugar para criar jogos personalizados, compartilhar códigos de sala e jogar mundos multiplayer vivos com seus amigos.',
+    'O cliente 96worlds é o seu lugar para criar jogos personalizados, compartilhar códigos de sala e jogar mundos multiplayer vivos com seus amigos.',
   'hero.cta': 'Comece agora',
   'hero.secondary': 'Ver vitrine',
-  'hero.stampLabel': 'Kigen — origem',
+  'hero.stampLabel': 'Sekai — mundo',
 
   'how.eyebrow': 'Como funciona',
   'how.title': 'Da ideia à noite de jogo',
@@ -166,7 +166,7 @@ const ptBR: Dict = {
     'Um cliente de código aberto, sistemas generativos próprios e servidores multiplayer — três pilares trabalhando juntos.',
   'how.client.title': 'Cliente de código aberto',
   'how.client.body':
-    'O cliente tokigen é construído sobre o Godot Engine 4 e tecnologias abertas como Jolt Physics, Terrain3D e LimboAI (MIT). Use-o para criar jogos com IA, compartilhar códigos e entrar com a galera.',
+    'O cliente 96worlds é construído sobre o Godot Engine 4 e tecnologias abertas como Jolt Physics, Terrain3D e LimboAI (MIT). Use-o para criar jogos com IA, compartilhar códigos e entrar com a galera.',
   'how.gen.title': 'Sistemas generativos próprios',
   'how.gen.body':
     'Descreva com suas palavras. Nosso pipeline generativo projeta o jogo, constrói o mundo de forma procedural, testa tudo com bots de IA e empacota para o launcher.',
@@ -207,14 +207,14 @@ const ptBR: Dict = {
   'showcase.step3': 'Testado por bots',
   'showcase.step4': 'Pronto para jogar',
   'showcase.resultLabel': 'Resultado: Templo de Coral Submerso',
-  'showcase.videoLabel': 'Gameplay gravado no launcher do tokigen',
+  'showcase.videoLabel': 'Gameplay gravado no launcher do 96worlds',
   'showcase.copyPrompt': 'Copiar prompt',
   'showcase.copied': 'Copiado!',
   'showcase.prev': 'Modelo anterior',
   'showcase.next': 'Próximo modelo',
 
   'download.eyebrow': 'Baixar',
-  'download.title': 'Baixe o launcher do tokigen',
+  'download.title': 'Baixe o launcher do 96worlds',
   'download.sub': 'Grátis. Instale uma vez para criar jogos, compartilhar códigos de sala e jogar com amigos.',
   'download.recommended': 'Recomendado',
   'download.button': 'Baixar',
@@ -224,7 +224,7 @@ const ptBR: Dict = {
   'download.note': 'Recebeu um código de sala de um amigo? Abra o launcher e digite o código.',
 
   'community.title': 'Entre na comunidade',
-  'community.body': 'Compartilhe seus jogos, encontre jogadores e ajude a moldar o tokigen.',
+  'community.body': 'Compartilhe seus jogos, encontre jogadores e ajude a moldar o 96worlds.',
 
   'footer.tagline': 'Crie um mundo. Escreva as regras. Traga seus amigos!',
   'footer.credit': 'Feito com Godot Engine e código aberto.',
@@ -245,10 +245,10 @@ const ptBR: Dict = {
 };
 
 const ja: Dict = {
-  'meta.title.home': 'tokigen.gg — 世界を創る。ルールを書く。仲間を呼ぼう！',
-  'meta.title.studio': 'Webスタジオ（工事中）— tokigen.gg',
+  'meta.title.home': '96worlds — 世界を創る。ルールを書く。仲間を呼ぼう！',
+  'meta.title.studio': 'Webスタジオ（工事中）— 96worlds',
   'meta.description':
-    'tokigenクライアントは、マルチプレイヤーゲームを創り、共有し、参加できるプラットフォームです。世界を創る。ルールを書く。仲間を呼ぼう！',
+    '96worldsクライアントは、マルチプレイヤーゲームを創り、共有し、参加できるプラットフォームです。世界を創る。ルールを書く。仲間を呼ぼう！',
 
   'nav.skip': '本文へスキップ',
   'nav.label': 'メインメニュー',
@@ -262,24 +262,24 @@ const ja: Dict = {
   'common.soon': '近日公開',
   'theme.toDark': 'ダークテーマに切り替え',
   'theme.toLight': 'ライトテーマに切り替え',
-  'brand.home': 'tokigen.gg ホーム',
+  'brand.home': '96worlds ホーム',
 
   'hero.eyebrow': 'AIネイティブなマルチプレイヤーゲーム制作',
   'hero.line1': '世界を創る。',
   'hero.line2': 'ルールを書く。',
   'hero.line3': '仲間を呼ぼう！',
   'hero.lead':
-    'tokigenクライアントは、AIと共に独自のゲームを創り、ルームコードで共有し、友達とマルチプレイヤーの世界へ飛び込めるオールインワン環境です。',
+    '96worldsクライアントは、AIと共に独自のゲームを創り、ルームコードで共有し、友達とマルチプレイヤーの世界へ飛び込めるオールインワン環境です。',
   'hero.cta': '今すぐ始める',
   'hero.secondary': 'ショーケースを見る',
-  'hero.stampLabel': '起源',
+  'hero.stampLabel': '世界',
 
   'how.eyebrow': '仕組み',
   'how.title': 'アイデアから、みんなで遊べるゲームへ',
   'how.sub': 'オープンソースのクライアント、独自の生成システム、そしてマルチプレイヤーサーバー。3つの柱で動いています。',
   'how.client.title': 'オープンソースのクライアント',
   'how.client.body':
-    'tokigenクライアントはGodot Engine 4をはじめ、Jolt Physics、Terrain3D、LimboAI（MITライセンス）で構築。ゲームの制作から、ルームコードの共有、仲間との参加までこれひとつで行えます。',
+    '96worldsクライアントはGodot Engine 4をはじめ、Jolt Physics、Terrain3D、LimboAI（MITライセンス）で構築。ゲームの制作から、ルームコードの共有、仲間との参加までこれひとつで行えます。',
   'how.gen.title': '独自の生成システム',
   'how.gen.body':
     '普段の言葉で説明するだけ。独自の生成パイプラインがゲームを設計し、ワールドをプロシージャルに構築し、AIボットでプレイテストしてから、ランチャー用にパッケージします。',
@@ -320,14 +320,14 @@ const ja: Dict = {
   'showcase.step3': 'ボットでテスト済み',
   'showcase.step4': 'プレイ準備OK',
   'showcase.resultLabel': '結果：海底の珊瑚寺院（Sunken Coral Temple）',
-  'showcase.videoLabel': 'tokigenランチャーで録画したゲームプレイ',
+  'showcase.videoLabel': '96worldsランチャーで録画したゲームプレイ',
   'showcase.copyPrompt': 'プロンプトをコピー',
   'showcase.copied': 'コピーしました！',
   'showcase.prev': '前のテンプレート',
   'showcase.next': '次のテンプレート',
 
   'download.eyebrow': 'ダウンロード',
-  'download.title': 'tokigenランチャーを入手',
+  'download.title': '96worldsランチャーを入手',
   'download.sub': '無料。一度インストールすれば、ゲームの制作、共有、仲間とのプレイがすべて可能になります。',
   'download.recommended': 'おすすめ',
   'download.button': 'ダウンロード',
@@ -337,7 +337,7 @@ const ja: Dict = {
   'download.note': '友達からルームコードをもらった？ランチャーを開いてコードを入力するだけ。',
 
   'community.title': 'コミュニティに参加',
-  'community.body': 'ゲームを共有して、仲間を見つけて、tokigenを一緒に作ろう。',
+  'community.body': 'ゲームを共有して、仲間を見つけて、96worldsを一緒に作ろう。',
 
   'footer.tagline': '世界を創る。ルールを書く。仲間を呼ぼう！',
   'footer.credit': 'Godot Engineとオープンソースで構築。',
@@ -432,5 +432,5 @@ export function applyLanguage(lang: Lang, persist = false): void {
     }
   }
 
-  document.dispatchEvent(new CustomEvent('tokigen:languagechange', { detail: { lang } }));
+  document.dispatchEvent(new CustomEvent('96worlds:languagechange', { detail: { lang } }));
 }

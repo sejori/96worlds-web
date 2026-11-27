@@ -6,23 +6,23 @@
     <script>
       // Apply any stored theme override before first paint; otherwise default to system theme.
       try {
-        const storedTheme = localStorage.getItem('tokigen_theme');
+        const storedTheme = localStorage.getItem('96worlds_theme');
         if (storedTheme === 'dark' || storedTheme === 'light') {
           document.documentElement.dataset.theme = storedTheme;
         }
       } catch (e) {}
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio (under construction) — tokigen.gg</title>
+    <title>Web Studio (under construction) — 96worlds</title>
     <meta
       name="description"
-      content="The tokigen client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!"
+      content="The 96worlds client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!"
     />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbfaf7" />
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1016" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="tokigen.gg" />
-    <meta property="og:title" content="tokigen.gg Web Studio — coming soon" />
+    <meta property="og:site_name" content="96worlds" />
+    <meta property="og:title" content="96worlds Web Studio — coming soon" />
     <meta property="og:url" content="%VITE_SITE_URL%studio.html" />
     <meta property="og:image" content="%VITE_SITE_URL%og-image.png" />
     <meta property="og:image:width" content="1200" />
@@ -38,9 +38,9 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <a href="./" class="brand" data-i18n-attr="aria-label:brand.home" aria-label="tokigen.gg home">
-          <span class="hanko hanko-sm" aria-hidden="true"><span>起源</span></span>
-          <span class="wordmark">tokigen<span class="wordmark-tld">.gg</span></span>
+        <a href="./" class="brand" data-i18n-attr="aria-label:brand.home" aria-label="96worlds home">
+          <span class="hanko hanko-sm" aria-hidden="true"><span>世界</span></span>
+          <span class="wordmark">96<span class="wordmark-tld">worlds</span></span>
         </a>
 
         <button
@@ -134,9 +134,9 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-brand">
-          <span class="hanko hanko-sm" aria-hidden="true"><span>起源</span></span>
+          <span class="hanko hanko-sm" aria-hidden="true"><span>世界</span></span>
           <div>
-            <span class="wordmark">tokigen<span class="wordmark-tld">.gg</span></span>
+            <span class="wordmark">96<span class="wordmark-tld">worlds</span></span>
             <p data-i18n="footer.tagline">Create a world. Write the rules. Bring your friends!</p>
           </div>
         </div>
@@ -147,7 +147,7 @@
           <a href="./studio.html" data-i18n="nav.studio">Web Studio</a>
         </nav>
         <p class="footer-meta">
-          <span>© 2026 tokigen.gg</span>
+          <span>© 2026 96worlds</span>
           <span data-i18n="footer.credit">Built with Godot Engine and open source.</span>
         </p>
       </div>

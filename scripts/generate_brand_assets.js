@@ -84,7 +84,7 @@ async function generateAssets() {
         letter-spacing: 0.5px;
       }
       .brand-tld {
-        color: #1f4fd8;
+        color: #d7261e;
       }
       .tag-pill {
         margin-left: 20px;
@@ -162,11 +162,11 @@ async function generateAssets() {
   <body>
     <div class="speedlines"></div>
     <div class="enso"></div>
-    <div class="hanko-large">起源</div>
+    <div class="hanko-large">世界</div>
 
     <div class="header">
-      <div class="hanko-header">起源</div>
-      <div class="brand-title">tokigen<span class="brand-tld">.gg</span></div>
+      <div class="hanko-header">世界</div>
+      <div class="brand-title"><span class="brand-tld">96</span>worlds</div>
       <div class="tag-pill">AI-Native Game Engine</div>
     </div>
 
@@ -177,7 +177,7 @@ async function generateAssets() {
         <span class="hl-blue">Bring your friends!</span>
       </div>
       <p class="lead">
-        The tokigen client is your home to create, share, and join living multiplayer games with your friends.
+        The 96worlds client is your home to create, share, and join living multiplayer games with your friends.
       </p>
     </div>
 
@@ -187,7 +187,7 @@ async function generateAssets() {
         <span class="badge">⚡ Custom Generative Systems</span>
         <span class="badge">🌐 Scale-to-Zero Multiplayer</span>
       </div>
-      <div style="font-size: 18px; font-weight: 800; color: #d7261e; letter-spacing: 0.5px;">tokigen.gg</div>
+      <div style="font-size: 18px; font-weight: 800; color: #d7261e; letter-spacing: 0.5px;">96worlds</div>
     </div>
   </body>
   </html>
@@ -198,7 +198,7 @@ async function generateAssets() {
   await page.screenshot({ path: join(__dirname, '../public/og-image.png'), type: 'png' });
   console.log('✓ Created public/og-image.png');
 
-  // 2. Favicon (64x64) - Hanko seal icon with 起源
+  // 2. Favicon (64x64) - Hanko seal icon with 世界
   const favHtml = `
   <!DOCTYPE html>
   <html>
@@ -233,7 +233,7 @@ async function generateAssets() {
     </style>
   </head>
   <body>
-    <div class="stamp">起源</div>
+    <div class="stamp">世界</div>
   </body>
   </html>
   `;
@@ -277,7 +277,7 @@ async function generateAssets() {
     </style>
   </head>
   <body>
-    <div class="stamp">起源</div>
+    <div class="stamp">世界</div>
   </body>
   </html>
   `;

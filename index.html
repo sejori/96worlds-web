@@ -6,17 +6,17 @@
     <script>
       // Apply any stored theme override before first paint; otherwise default to system theme.
       try {
-        const storedTheme = localStorage.getItem('tokigen_theme');
+        const storedTheme = localStorage.getItem('96worlds_theme');
         if (storedTheme === 'dark' || storedTheme === 'light') {
           document.documentElement.dataset.theme = storedTheme;
         }
       } catch (e) {}
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tokigen.gg — Create a world. Write the rules. Bring your friends!</title>
+    <title>96worlds — Create a world. Write the rules. Bring your friends!</title>
     <meta
       name="description"
-      content="The tokigen client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!"
+      content="The 96worlds client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!"
     />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbfaf7" />
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1016" />
@@ -24,25 +24,25 @@
     <!-- Share previews (OpenGraph / X). Crawlers need absolute URLs: %VITE_SITE_URL% comes from .env -->
     <link rel="canonical" href="%VITE_SITE_URL%" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="tokigen.gg" />
-    <meta property="og:title" content="tokigen.gg — Create a world. Write the rules. Bring your friends!" />
+    <meta property="og:site_name" content="96worlds" />
+    <meta property="og:title" content="96worlds — Create a world. Write the rules. Bring your friends!" />
     <meta
       property="og:description"
-      content="The tokigen client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!"
+      content="The 96worlds client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!"
     />
     <meta property="og:url" content="%VITE_SITE_URL%" />
     <meta property="og:image" content="%VITE_SITE_URL%og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="tokigen.gg — Create a world. Write the rules. Bring your friends!" />
+    <meta property="og:image:alt" content="96worlds — Create a world. Write the rules. Bring your friends!" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:locale:alternate" content="pt_BR" />
     <meta property="og:locale:alternate" content="ja_JP" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="tokigen.gg — Create a world. Write the rules. Bring your friends!" />
+    <meta name="twitter:title" content="96worlds — Create a world. Write the rules. Bring your friends!" />
     <meta
       name="twitter:description"
-      content="The tokigen client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!"
+      content="The 96worlds client is your home to create, share, and join living multiplayer games. Create a world. Write the rules. Bring your friends!"
     />
     <meta name="twitter:image" content="%VITE_SITE_URL%og-image.png" />
 
@@ -55,9 +55,9 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#top" class="brand" data-i18n-attr="aria-label:brand.home" aria-label="tokigen.gg home">
-          <span class="hanko hanko-sm" aria-hidden="true"><span>起源</span></span>
-          <span class="wordmark">tokigen<span class="wordmark-tld">.gg</span></span>
+        <a href="#top" class="brand" data-i18n-attr="aria-label:brand.home" aria-label="96worlds home">
+          <span class="hanko hanko-sm" aria-hidden="true"><span>世界</span></span>
+          <span class="wordmark">96<span class="wordmark-tld">worlds</span></span>
         </a>
 
         <button
@@ -119,14 +119,14 @@
             <span class="hero-line hero-line-blue" data-i18n="hero.line3">Bring your friends!</span>
           </h1>
           <p class="hero-lead" data-i18n="hero.lead">
-            The tokigen client is your home to create custom games, share room codes, and jump into living multiplayer worlds with your friends.
+            The 96worlds client is your home to create custom games, share room codes, and jump into living multiplayer worlds with your friends.
           </p>
           <div class="hero-actions">
             <a href="#download" id="cta-get-started" class="btn btn-cta btn-lg" data-i18n="hero.cta">Get Started Now</a>
             <a href="#showcase" class="btn btn-ghost btn-lg" data-i18n="hero.secondary">Watch showcase</a>
           </div>
-          <div class="hanko hanko-hero" role="img" data-i18n-attr="aria-label:hero.stampLabel" aria-label="Kigen — origin">
-            <span aria-hidden="true">起源</span>
+          <div class="hanko hanko-hero" role="img" data-i18n-attr="aria-label:hero.stampLabel" aria-label="Sekai — world">
+            <span aria-hidden="true">世界</span>
           </div>
         </div>
       </section>
@@ -281,7 +281,7 @@
                   preload="metadata"
                   poster="./showcase/action-rpg-poster.jpg"
                   data-i18n-attr="aria-label:showcase.videoLabel"
-                  aria-label="Gameplay recorded in the tokigen launcher"
+                  aria-label="Gameplay recorded in the 96worlds launcher"
                 >
                   <source src="./showcase/action-rpg.webm" type="video/webm" />
                   <source src="./showcase/action-rpg.mp4" type="video/mp4" />
@@ -349,7 +349,7 @@
               <span class="kanji-badge kanji-blue" aria-hidden="true">開</span>
               <h3 data-i18n="how.client.title">Open-source client</h3>
               <p data-i18n="how.client.body">
-                The tokigen client is built on Godot Engine 4 and open-source tech like Jolt Physics, Terrain3D, and
+                The 96worlds client is built on Godot Engine 4 and open-source tech like Jolt Physics, Terrain3D, and
                 LimboAI (MIT). Use it to create games with AI, share room codes, and join your friends.
               </p>
               <ul class="chips">
@@ -448,7 +448,7 @@
         <div class="container">
           <header class="section-header">
             <p class="eyebrow" data-i18n="download.eyebrow">Download</p>
-            <h2 class="brush-title" data-i18n="download.title">Get the tokigen launcher</h2>
+            <h2 class="brush-title" data-i18n="download.title">Get the 96worlds launcher</h2>
             <p class="section-sub" data-i18n="download.sub">Free. Install once and join any game your friends create.</p>
           </header>
 
@@ -457,14 +457,14 @@
               <a
                 class="card download-card"
                 data-os="windows"
-                href="%VITE_LAUNCHER_RELEASES_URL%/TokigenLauncher-win64.exe"
-                download="TokigenLauncher-win64.exe"
+                href="%VITE_LAUNCHER_RELEASES_URL%/96WorldsLauncher-win64.exe"
+                download="96WorldsLauncher-win64.exe"
               >
                 <span class="recommended-badge" data-i18n="download.recommended">Recommended</span>
                 <svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.5 10.5 4.4v7.1H3Zm8.5-1.2L21 3v8.5h-9.5ZM3 12.5h7.5v7.1L3 18.5Zm8.5 0H21V21l-9.5-1.3Z" /></svg>
                 <span class="os-name">Windows</span>
                 <span class="os-meta" data-i18n="download.win.meta">Windows 10 / 11 · 64-bit</span>
-                <code class="os-file">TokigenLauncher-win64.exe</code>
+                <code class="os-file">96WorldsLauncher-win64.exe</code>
                 <span class="btn btn-primary btn-block" data-i18n="download.button">Download</span>
               </a>
             </li>
@@ -472,14 +472,14 @@
               <a
                 class="card download-card"
                 data-os="macos"
-                href="%VITE_LAUNCHER_RELEASES_URL%/TokigenLauncher-macOS.dmg"
-                download="TokigenLauncher-macOS.dmg"
+                href="%VITE_LAUNCHER_RELEASES_URL%/96WorldsLauncher-macOS.dmg"
+                download="96WorldsLauncher-macOS.dmg"
               >
                 <span class="recommended-badge" data-i18n="download.recommended">Recommended</span>
                 <span class="os-icon os-glyph" aria-hidden="true">⌘</span>
                 <span class="os-name">macOS</span>
                 <span class="os-meta" data-i18n="download.mac.meta">Apple silicon &amp; Intel</span>
-                <code class="os-file">TokigenLauncher-macOS.dmg</code>
+                <code class="os-file">96WorldsLauncher-macOS.dmg</code>
                 <span class="btn btn-primary btn-block" data-i18n="download.button">Download</span>
               </a>
             </li>
@@ -487,14 +487,14 @@
               <a
                 class="card download-card"
                 data-os="linux"
-                href="%VITE_LAUNCHER_RELEASES_URL%/TokigenLauncher-x86_64.AppImage"
-                download="TokigenLauncher-x86_64.AppImage"
+                href="%VITE_LAUNCHER_RELEASES_URL%/96WorldsLauncher-x86_64.AppImage"
+                download="96WorldsLauncher-x86_64.AppImage"
               >
                 <span class="recommended-badge" data-i18n="download.recommended">Recommended</span>
                 <svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3zM7 10l3 2-3 2M12 15h5" /></svg>
                 <span class="os-name">Linux</span>
                 <span class="os-meta" data-i18n="download.linux.meta">x86_64 · Steam Deck</span>
-                <code class="os-file">TokigenLauncher-x86_64.AppImage</code>
+                <code class="os-file">96WorldsLauncher-x86_64.AppImage</code>
                 <span class="btn btn-primary btn-block" data-i18n="download.button">Download</span>
               </a>
             </li>
@@ -504,7 +504,7 @@
           <aside class="card community-card is-soon" aria-disabled="true">
             <div>
               <h3 data-i18n="community.title">Join the community</h3>
-              <p data-i18n="community.body">Share your games, find players and help shape tokigen.</p>
+              <p data-i18n="community.body">Share your games, find players and help shape 96worlds.</p>
             </div>
             <span class="btn btn-secondary" aria-hidden="true">Discord</span>
             <span class="soon-banner" data-i18n="common.soon">Coming soon</span>
@@ -516,9 +516,9 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-brand">
-          <span class="hanko hanko-sm" aria-hidden="true"><span>起源</span></span>
+          <span class="hanko hanko-sm" aria-hidden="true"><span>世界</span></span>
           <div>
-            <span class="wordmark">tokigen<span class="wordmark-tld">.gg</span></span>
+            <span class="wordmark">96<span class="wordmark-tld">worlds</span></span>
             <p data-i18n="footer.tagline">Create a world. Write the rules. Bring your friends!</p>
           </div>
         </div>
@@ -529,7 +529,7 @@
           <a href="./studio.html" data-i18n="nav.studio">Web Studio</a>
         </nav>
         <p class="footer-meta">
-          <span>© 2026 tokigen.gg</span>
+          <span>© 2026 96worlds</span>
           <span data-i18n="footer.credit">Built with Godot Engine and open source.</span>
         </p>
       </div>

@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('tokigen.gg Web Suite', () => {
-  test('Landing page loads with tokigen branding and hero copy', async ({ page }) => {
+test.describe('96worlds Web Suite', () => {
+  test('Landing page loads with 96worlds branding and hero copy', async ({ page }) => {
     await page.goto('./');
-    await expect(page).toHaveTitle(/tokigen\.gg — Create a world. Write the rules. Bring your friends!/i);
+    await expect(page).toHaveTitle(/96worlds — Create a world. Write the rules. Bring your friends!/i);
 
     // Hero headline lines
     const heroTitle = page.locator('.hero-title');
@@ -17,10 +17,10 @@ test.describe('tokigen.gg Web Suite', () => {
     await expect(heroLead).toContainText('create custom games');
     await expect(heroLead).toContainText('share room codes');
 
-    // Kigen Hanko seal
+    // Sekai (world) Hanko seal
     const heroHanko = page.locator('.hanko-hero');
     await expect(heroHanko).toBeVisible();
-    await expect(heroHanko).toContainText('起源');
+    await expect(heroHanko).toContainText('世界');
   });
 
   test('Showcase section appears before How it works in page flow', async ({ page }) => {
@@ -166,23 +166,23 @@ test.describe('tokigen.gg Web Suite', () => {
     }
   });
 
-  test('Download section offers TokigenLauncher for Windows, macOS, Linux', async ({ page }) => {
+  test('Download section offers 96WorldsLauncher for Windows, macOS, Linux', async ({ page }) => {
     await page.goto('./');
     const dlSection = page.locator('#download');
     await expect(dlSection).toBeVisible();
 
     // Windows card
-    const winDl = dlSection.locator('a[download="TokigenLauncher-win64.exe"]');
+    const winDl = dlSection.locator('a[download="96WorldsLauncher-win64.exe"]');
     await expect(winDl).toBeVisible();
     await expect(winDl.locator('.os-name')).toHaveText('Windows');
 
     // macOS card
-    const macDl = dlSection.locator('a[download="TokigenLauncher-macOS.dmg"]');
+    const macDl = dlSection.locator('a[download="96WorldsLauncher-macOS.dmg"]');
     await expect(macDl).toBeVisible();
     await expect(macDl.locator('.os-name')).toHaveText('macOS');
 
     // Linux card
-    const linuxDl = dlSection.locator('a[download="TokigenLauncher-x86_64.AppImage"]');
+    const linuxDl = dlSection.locator('a[download="96WorldsLauncher-x86_64.AppImage"]');
     await expect(linuxDl).toBeVisible();
     await expect(linuxDl.locator('.os-name')).toHaveText('Linux');
   });
@@ -206,14 +206,14 @@ test.describe('tokigen.gg Web Suite', () => {
     // Switch to Japanese
     await langSelect.selectOption('ja');
     await expect(page.locator('html')).toHaveAttribute('lang', 'ja');
-    await expect(page).toHaveTitle(/tokigen\.gg — 世界を創る。ルールを書く。仲間を呼ぼう！/i);
+    await expect(page).toHaveTitle(/96worlds — 世界を創る。ルールを書く。仲間を呼ぼう！/i);
     await expect(page.locator('.hero-title')).toContainText('世界を創る。');
     await expect(page.locator('#cta-get-started')).toHaveText('今すぐ始める');
 
     // Switch to Brazilian Portuguese
     await langSelect.selectOption('pt-BR');
     await expect(page.locator('html')).toHaveAttribute('lang', 'pt-BR');
-    await expect(page).toHaveTitle(/tokigen\.gg — Crie um mundo. Escreva as regras. Traga seus amigos!/i);
+    await expect(page).toHaveTitle(/96worlds — Crie um mundo. Escreva as regras. Traga seus amigos!/i);
     await expect(page.locator('.hero-title')).toContainText('Crie um mundo.');
     await expect(page.locator('#cta-get-started')).toHaveText('Comece agora');
 
@@ -252,7 +252,7 @@ test.describe('tokigen.gg Web Suite', () => {
 
     // Navigate to studio page
     await page.goto('./studio.html');
-    await expect(page).toHaveTitle(/Web Studio \(under construction\) — tokigen\.gg/i);
+    await expect(page).toHaveTitle(/Web Studio \(under construction\) — 96worlds/i);
     await expect(page.getByRole('heading', { name: /Under construction/i })).toBeVisible();
 
     // Japanese "工事中" hanko seal on the studio page

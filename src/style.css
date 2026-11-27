@@ -1,5 +1,5 @@
 /* ==========================================================================
-   tokigen.gg — brand stylesheet
+   96worlds — brand stylesheet
    Brush-stroke display type (street-fighter / Japanese ink) on a clean,
    Material-style surface system. White · blue · red. Light + dark schemes.
    ========================================================================== */
@@ -214,13 +214,13 @@ code {
   font-size: 1.65rem;
   line-height: 1;
   letter-spacing: 0.01em;
-  color: var(--text);
+  color: var(--red); /* "96" */
 }
 .wordmark-tld {
-  color: var(--blue);
+  color: var(--text); /* "worlds" */
 }
 
-/* Hanko (印) seal — 起源 "kigen", origin */
+/* Hanko (印) seal — 世界 "sekai", world */
 .hanko {
   display: inline-grid;
   place-items: center;

@@ -22,7 +22,7 @@ function initLanguage(): void {
 /* Colour scheme: strictly defaults to system theme; toggle pins an   */
 /* override, or clears it when returning to match the system scheme.   */
 /* ------------------------------------------------------------------ */
-const THEME_KEY = 'tokigen_theme';
+const THEME_KEY = '96worlds_theme';
 
 function initThemeToggle(): void {
   const root = document.documentElement;
@@ -148,7 +148,7 @@ function initPromptTyping(): void {
   observer.observe(card);
 
   // Switching language mid-animation: just show the full translated prompt.
-  document.addEventListener('tokigen:languagechange', () => {
+  document.addEventListener('96worlds:languagechange', () => {
     if (started) finish();
   });
 }

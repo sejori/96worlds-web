@@ -99,7 +99,7 @@ export function initShowcaseCarousel(): {
 
     // Dispatch custom event for listeners
     document.dispatchEvent(
-      new CustomEvent('tokigen:showcasechange', {
+      new CustomEvent('96worlds:showcasechange', {
         detail: { index: currentIndex, cartridge: item },
       })
     );
